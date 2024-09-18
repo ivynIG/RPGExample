@@ -383,6 +383,10 @@ void MovePlayer()
 
 void ApplyPlayerActions()
 {
+	//TODO: selectable action from menu before or after click for more 
+	//		options: talk, cast spell, inspect, goto with pathfinding
+	//		fluid animations
+	//		improve kiting
 	// see if we want to attack any mobs
 	if (TargetMob != nullptr)
 	{

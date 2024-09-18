@@ -44,7 +44,7 @@ Item* AddItem(const char* name, int sprite, ItemTypes type)
 Item* GetItem(int id)
 {
 	if (id < 0 || id >= ItemDB.size())
-	return nullptr;
+		return nullptr;
 
 	return &ItemDB[id];
 }

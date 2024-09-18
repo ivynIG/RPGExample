@@ -19,6 +19,9 @@ function platform_defines()
 
     filter {"system:linux"}
         defines {"_GNU_SOURCE"}
+	defines {"_GLFW_X11"}
+
+
 -- This is necessary, otherwise compilation will fail since
 -- there is no CLOCK_MONOTOMIC. raylib claims to have a workaround
 -- to compile under c99 without -D_GNU_SOURCE, but it didn't seem
